@@ -1,0 +1,27 @@
+[package]
+name = "vaccel"
+version = "0.1.0"
+authors = ["Babis Chalios <mail@bchalios.io>"]
+edition = "2018"
+build = "build.rs"
+
+[lib]
+name = "vaccel"
+path = "src/lib.rs"
+
+[dependencies]
+protocols = { git = "https://github.com/cloudkernels/vaccel-grpc", tag = "v0.1.0" }
+protobuf = "=2.14.0"
+memchr = "2.3.3"
+libc = "0.2.68"
+
+[build-dependencies]
+libc = ">=0.2.39"
+bindgen = "0.53.1"
+pkg-config = "0.3.16"
+cmake = "0.1"
+
+[dev-dependencies]
+env_logger = "0.8.3"
+log = "0.4.0"
+utilities = { path = "utilities" }
