@@ -1,12 +1,12 @@
 [package]
-name = "vaccel"
+name = "vaccel-bindings"
 version = "0.1.0"
 authors = ["Babis Chalios <mail@bchalios.io>"]
 edition = "2018"
 build = "build.rs"
 
 [lib]
-name = "vaccel"
+name = "vaccel_bindings"
 path = "src/lib.rs"
 
 [dependencies]
